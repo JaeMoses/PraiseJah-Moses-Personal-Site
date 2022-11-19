@@ -4,54 +4,68 @@
 <head>
   <meta charset="utf-8">
   <title>PraiseJah Moses</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/logo.png">
 </head> 
 
 <body>
+
   <div class="top-container">
+
     <img class="top-cloud" src="images/cloud.png" alt="cloud">
+
     <div class="title-text">
-      <h1>I'm PraiseJah.</h1>
-      <h2>a <span class="pro">pro</span>grammer.</h2>
+      <h1  class="animate__animated animate__bounce" >I'm PraiseJah.</h1>
+      <h2>a programmer.</h2>
     </div>
+
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
-    <img class="mountain" src="images/mountain.png" alt="mountain-img">
   </div>
 
   <div class="middle-container">
+    <img src="/images/ballon.png" alt="" class="ballon" >
     <div class="profile">
-      <img src="images/Logo Png.png" alt="My logo">
-      <h2>Hello.</h2>
-      <p class="intro">I am a Fullstack Developer and Software Enginner. I ❤️ soccer.</p>
+      <img src="images/pJ.png" alt="My logo" id="logo"   data-aos="fade-up" >
+      <h2 data-aos="fade-right" >Hello.</h2>
+      <p class="intro" data-aos="fade-left" >I am a Fullstack Developer and Software Enginner. I ❤️ soccer.</p>
     </div>
-    <hr>
-    <div class="skills">
+
+    <div  class="skills" data-aos="zoom-in">
       <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="code-img" src="images/Background.svg" alt="code-img">
 
-        <h3>Design & Development</h3>
-        <p>Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+      <div class="skillCont" >
+        <img src="/images/Background.svg" alt="" id="logo" >
 
+        <div  class="cont" >
+          <h3>Design & Development</h3>
+          <p>Over time, I have gained a wealth of experience designing and 
+            developing mobile and web applications.
+          </p>
+        </div>
       </div>
-    
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you love coding as much as I do.</h3>
-      <p class="contact-message"> Lets share ideas</p>
-      <a class="btn" href="mailto:dankerobby@gmail.com">CONTACT ME</a>
-    </div>
+
+    <h2 id="contactH2" >Get In Touch</h2>
+    <p class="contact-message"> Lets share ideas</p>
+    <a class="btn" href="mailto:dankerobby@gmail.com">CONTACT ME</a>
+
   </div>
 
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p class="copyright">© 2022 PraiseJah Moses.</p>
   </div>
+
+
+
+
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

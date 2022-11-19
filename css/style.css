@@ -1,118 +1,137 @@
-body {
-    color: #40514E;
+  body {
+    color: #ffffff;
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
     background-color: #F47C7C;
   }
-  
-  h1 {
-    color: #66BFBF;
+
+
+  .top-container {
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #EF9F9F;
+  }
+  .top-cloud {
+    transform: rotate(180deg);
+    position: absolute;
+    right: 50px;
+    top: 0px;
+  }
+  .top-container h1 {
+    color: black;
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
   }
-  
-  h2 {
-    color: #66BFBF;
+  .bottom-cloud {
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+  }
+
+
+
+  .middle-container {
+    position: relative;
+    height: fit-content;
+    padding: 50px;
+  }
+  .ballon{
+    position: absolute;
+    left: 100px;
+    top: -100px;
+    animation-name: fly;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  .profile{
+    padding: 10px;
+  }
+  #logo {
+    width: 200px;height:200px ;
+    border-radius: 20px;
+  }
+  .profile h2 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 50px auto auto auto;
+  }
+  .intro {
+    color: black;
+    line-height: 2;
+    width: 30%;
+    margin: 50px auto auto auto;
+  }
+  .skills{
+    padding: 40px;
+    width: fit-content;
+    border-radius: 10px;
+    border:  1px solid gray;
+    margin: 100px auto auto auto;
+  }
+  .skills h2{
+    display: block;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: normal;
-    padding-bottom: 10px;
+    margin: auto auto auto auto;
   }
-  
-  h3 {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
+  .skillCont{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
   }
-  
-  p {
-    line-height: 2;
+  .cont{
+    text-align: left;
+    width: 300px;
+    margin-left: 10px;
   }
-  
-  hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
+  #contactH2{
+    margin-top: 50px;
   }
+  .contact-message {
+    width: 40%;
+    margin: 10px auto 30px;
+  }
+
+
+
+
+
   
+  .bottom-container {
+    position: relative;
+    z-index: 99;
+    background-color: #FAD4D4;
+    padding: 20px 0 20px;
+  }
   a{
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 20px;
     text-decoration: none;
   }
-  
   a:hover {
     color: #EAF6F6;
   }
-  
-  .top-container {
-    background-color: #EF9F9F;
-    position: relative;
-    padding-top: 100px;
-  }
-  
-  .middle-container {
-    margin: 100px 0;
-  }
-  
-  .bottom-container {
-    background-color: #FAD4D4;
-    padding: 50px 0 20px;
-  }
-  
-  .skill-row {
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-  }
-  
-  .pro {
-    text-decoration: underline;
-  }
-  
-  .intro {
-    width: 30%;
-    margin: auto;
-  }
-  
-  .contact-message {
-    width: 40%;
-    margin: 40px auto 60px;
-  }
-  
   .copyright {
     color: #EAF6F6;
     font-size: 0.75rem;
-    padding: 20px 0;
+    padding: 5px 0;
   }
+
   
-  .top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-  }
   
-  .bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
-  }
-  
-  .code-img {
-    width: 25%;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  .chilli-img {
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-  }
-  
+
   .btn {
     background: #F24C4C;
     background-image: -webkit-linear-gradient(top, #F24C4C, #F24C4C);
@@ -125,7 +144,7 @@ body {
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }
@@ -140,3 +159,8 @@ body {
     text-decoration: none;
   }
   
+
+  @keyframes fly {
+    from {top: -100px;}
+    to  {top: 1160px}
+  }
